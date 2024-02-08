@@ -1,0 +1,45 @@
+
+def rev_string(str):
+  return str[ ::-1]
+a="abhishek"
+rev_string(a)
+
+#reverse a string
+a="abhishek"
+print(a[-1])
+for i in range(0,len(a)):
+  print(a[-i])
+  
+
+
+
+def palindrome_no(no):
+  a=str(no)
+  return a==a[ ::-1]
+no=1234
+palindrome_no(no)
+
+#factorial using loop
+a=int(input("enter a no"))
+i=1
+fact=1
+while i<=a:
+  fact*=i
+  i+=1
+print(fact)
+
+#fact using recursion
+def fact_no(a):
+  if a<=1:
+    return a
+  else:
+    return (a*fact_no(a-1))
+  
+fact_no(4)
+
+#fibonacci using recursion
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+fibonacci(6)
